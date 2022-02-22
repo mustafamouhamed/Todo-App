@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+}
+.card{
+    background-color: #333;
+    color: white;
+}
+.none {
+    display: none;
+}
+.modal{
+    background-color: #444;
+    color: white;
+}
+.checked{
+    text-decoration: line-through;
+    background-color: yellow;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+
+<body>
+    <h1 class="text-info display-2 text-center"> To Do APP</h1>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button onclick="closemodel()"type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>ADD TASK</label>
+                            <input id="TaskInput" type="text" placeholder="your task" class="form-control">
+                            <div id="inValid" class=" none alert alert-danger">
+                                Please Enter Valid Data
+                                <button  id="closeValidationMessage" type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                            </div>
+                        </div>
+                        <button id="TaskBtn" class="bt btn-info btn-block w-50 mx-auto"> Add task</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button onclick="closemodel()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="ModalBtn" class="bt btn-info btn-block w-50 mx-auto"> show Modal</button>
+    <div class="container mt-5 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div id="NoTask"class="alert alert-danger">
+                    No Tasks Add Yet
+                </div>
+                <div class="tasks">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"> </Script>
+</body>
+
+</html>
